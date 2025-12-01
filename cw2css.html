@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Layered Box Model</title>
+
+<style>
+    /* Outer container box */
+    .outer-box {
+        border: 8px solid #1e3a8a;   /* Large outer border (blue) */
+        padding: 20px;               /* Space before middle border appears */
+        width: 350px;
+        margin: 40px auto;
+        background: #f0f4ff;
+    }
+
+    /* Middle border layer */
+    .middle-box {
+        border: 5px solid #64748b;   /* Medium middle border (gray-blue) */
+        padding: 20px;               /* Space before inner box */
+        background: #ffffff;
+    }
+
+    /* Inner box */
+    .inner-box {
+        border: 3px solid #0f766e;   /* Small inner border (teal) */
+        padding: 15px;
+        background: #ecfdf5;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="outer-box">
+    <div class="middle-box">
+        <div class="inner-box">
+            <h3>Three-Layered Box Model</h3>
+            <p>This design includes:<br>
+                • Outer Container Border<br>
+                • Middle Border Layer<br>
+                • Inner Box Border
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
