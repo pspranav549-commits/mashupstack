@@ -1,133 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Personal Profile — Pranav </title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background-image:
-        linear-gradient(135deg, rgba(14,78,139,0.85), rgba(0,152,116,0.75)),
-        url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1920&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: #0f172a; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-    .profile-card {
-      width: 100%;
-      max-width: 820px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,255,0.9));
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.35);
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 0;
-    }
-    .profile-main {
-      padding: 36px;
-      background: linear-gradient(90deg, rgba(255,255,255,0.0), rgba(255,255,255,0.02));
-    }
+    <title>Personal Profile</title>
 
-    h1.name {
-      margin: 0 0 12px 0;
-      font-size: 2.4rem; 
-      letter-spacing: -0.02em;
-      color: #073b4c; 
-    }
+    <style>
+        body {
+            background-image:url(https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80); 
+            background-size :auto;
+            background-repeat: no-repeat;;
+            background-attachment: fixed;
+            background-position : center;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
 
-    p.bio {
-      margin: 0 0 18px 0;
-      line-height: 1.6;
-      color: #0b2540; 
-      font-size: 1rem;
-    }
+        h1 {
+            color: 000fff;
+            background-color: darkturquoise;
+            background-size :auto;
+        }
 
-    blockquote.quote {
-      margin: 0;
-      padding: 14px 18px;
-      background: rgba(3, 201, 169, 0.07); 
-      border-left: 4px solid #00b894; 
-      font-style: italic;
-      color: #065a4b; 
-    }
+        p {
+            color: rgb(233, 245, 122); 
+            background-color:rgb(21, 8, 141);
+           font-family: 'Courier New', Courier, monospace;
+        }
 
-    .profile-side {
-      padding: 20px;
-      background: linear-gradient(180deg, rgba(7,59,76,0.06), rgba(0,0,0,0.02));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    .avatar {
-      width: 140px;
-      height: 140px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #ffd166, #ff7b7b);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #1f1f1f;
-      box-shadow: 0 6px 18px rgba(3,6,23,0.18);
-      font-size: 1.1rem;
-    }
-
-    .meta {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #063251;
-    }
-
-    .meta small {
-      display: block;
-      color: #09435b;
-      opacity: 0.85;
-      margin-top: 6px;
-    }
-    @media (max-width: 760px) {
-      .profile-card {
-        grid-template-columns: 1fr;
-      }
-      .profile-side {
-        order: -1;
-        padding-bottom: 8px;
-      }
-    }
-  </style>
+        .quote {
+            color: lightcyan;
+            font-style: italic;
+            background-color: darkred;
+        }
+    </style>
 </head>
-<body>
-  <article class="profile-card" aria-label="Personal profile card for ChatGPT">
-    <section class="profile-side" aria-hidden="false">
-      <div class="avatar" aria-hidden="true">CG</div>
-      <div class="meta">
-        <strong>ChatGPT</strong><br/>
-        <small>GPT-5 Thinking mini</small>
-      </div>
-    </section>
 
-    <main class="profile-main">
-      <h1 class="name">ChatGPT — GPT-5 Thinking mini</h1>
-      <p class="bio">
-        I’m an AI assistant designed to help you think, write, and build faster.
-        I synthesize information, explain ideas clearly, and generate creative content — from code
-        to stories to detailed answers. I don't have personal experiences, but I’m trained to help you with knowledge and reasoning.
-      </p>
-      <blockquote class="quote">
-        “The important thing is not to stop questioning. Curiosity has its own reason for existing.” — <em>Albert Einstein</em>
-      </blockquote>
-    </main>
-  </article>
+<body>
+
+    <h1>Pranav</h1>
+
+    <p>
+      I'm Pranav P S — a web enthusiast who loves building clean, usable interfaces.
+                My favorite hobby is reading books. I enjoy exploring ideas through fiction and technical reads.
+                Born on 12/10/2003 
+    <p class="quote"> "Dream big, stay focused, and keep moving forward"    </p>
+
 </body>
 </html>
