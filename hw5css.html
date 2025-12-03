@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Blog Post</title>
+
+    <style>
+        .blog-post {
+            width: 70%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        .blog-post p::first-line {
+            font-weight: bold;
+        }
+
+        .blog-post p::first-letter {
+            font-size: 2.2em;
+            color: #c0392b;
+        }
+        .quote {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f0f0;
+            border-left: 4px solid #888;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote::before {
+            content: "“ ";    
+            font-size: 2em;
+            color: #777;
+            position: relative;
+            top: -5px;
+        }
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .headings {
+            display: flex;
+            gap: 20px;
+        }
+        h4 + h4 {
+            color: green;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="blog-post">
+        <h1>Understanding Web Design Basics</h1>
+        <p><strong>Author:</strong> Jane Doe</p>
+        <p>
+            Web design is an essential skill in the modern digital world, allowing creators 
+            to build attractive and functional websites that offer excellent user experiences. 
+            Mastering basic design principles can significantly improve your work.
+        </p>
+        <div class="quote">
+            Good design is obvious. Great design is transparent.
+        </div>
+        <p>
+            To learn more about design principles, visit the 
+            <a href="#">Complete Web Design Guide</a>.
+        </p>
+        <div class="headings">
+            <h4>Overview</h4>
+            <h4>Details</h4>
+        </div>
+
+    </div>
+
+</body>
+</html>
