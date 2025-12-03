@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styled Webpage</title>
+
+    <style>
+        section p::first-line {
+            font-weight: bold;        
+        }
+
+        section p::first-letter {
+            color: red;                 
+            font-size: 2em;            
+        }
+        h3 + h3 {
+            color: green;
+        }
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        ul li:first-child a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>About Our Team</h2>
+
+        <p>
+            We are committed to delivering high-quality products that meet client expectations 
+            and push the boundaries of innovation.
+        </p>
+
+        <p>
+            Our team consists of skilled developers, designers, and thinkers who collaborate 
+            to build user-friendly and reliable applications.
+        </p>
+    </section>
+
+    <hr>
+    <div>
+        <h3>First Heading</h3>
+        <h3>Second Heading</h3>
+    </div>
+
+    <hr>
+    <div>
+        <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Second Link</a></li>
+            <li><a href="#">Third Link</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
