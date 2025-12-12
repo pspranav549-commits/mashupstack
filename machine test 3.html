@@ -13,35 +13,26 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
-
 .container {
     display: flex;
     height: 100vh;
-    margin-left: 10px;
-    padding: 10px;
-    
+    margin-left: 0px;   
 }
-
-
 .left-side {
     flex: 1;
-    background: linear-gradient(to bottom,#a4a4b9, #a87b40); 
+    background: linear-gradient(to bottom,#a4a4b9, #a87b40);
 }
-
-
 .right-side {
    flex: 1;
     background: white;
-    margin: left 0px;;
+    margin: left 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-
 .login-box {
-    width: 100%;
-   
+    width: 100%;  
 }
 
 h2 {
@@ -82,17 +73,13 @@ button {
     font-size: 16px;
 }
 
-
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
     }
-
-    
-    .left-side {
+     .left-side {
         display: none;
     }
-
     .right-side {
         width: 100%;
         height: auto;
@@ -100,14 +87,10 @@ button {
     }
 }
 </style>
-
 </head>
 <body>
-
 <div class="container">
-
     <div class="left-side"></div>
-
     <div class="right-side">
         <div class="login-box">
             <h2>Login Form</h2>
@@ -121,12 +104,9 @@ button {
             <div class="remember">
                 <input type="checkbox"> Remember Me
             </div>
-
             <button>Login</button>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>
