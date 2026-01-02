@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let students = [
+  { name: "Amit", score: 78 },
+  { name: "Riya", score: 62 },
+  { name: "Karan", score: 45 },
+  { name: "Neha", score: 91 },
+  { name: "Suman", score: 34 }
+];
+
+console.log("All Students:");
+students.forEach(student => {
+  console.log(student.name);
+});
+
+let above60 = students
+  .filter(student => student.score > 60)
+  .map(student => student.name);
+
+console.log("\nStudents who scored more than 60:");
+console.log(above60);
+
+let totalScore = students.reduce((total, student) => {
+  return total + student.score;
+}, 0);
+
+console.log("\nTotal Score of all students:", totalScore);
+
+let allPassed = students.every(student => student.score > 35);
+console.log("\nDid all students pass?", allPassed);
+
+let topperExists = students.some(student => student.score > 90);
+console.log("\nIs there a student who scored more than 90?", topperExists);
+
+let sortedStudents = [...students].sort((a, b) => b.score - a.score);
+
+console.log("\nStudents sorted by score (High to Low):");
+sortedStudents.forEach(student => {
+  console.log(`${student.name} - ${student.score}`);
+});
+
+    </script>
+    
+</body>
+</html>
