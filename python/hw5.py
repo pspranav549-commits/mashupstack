@@ -1,7 +1,7 @@
-frontend_students = {"Anjana", "Rahul", "Priya", "Kiran"}
-backend_students = {"Rahul", "Sanjay", "Meena", "Kiran"}
+frontend_students = {"Anjana", "eby", "Pranav", "aiswarya"}
+backend_students = {"eby", "Sanjay", "Meena", "aiswarya"}
 backend_students.add("Arjun")
-frontend_students.remove("Priya")
+frontend_students.remove("Pranav")
 both_courses = frontend_students.intersection(backend_students)
 print("Students in both Frontend and Backend:", both_courses)
 only_backend = backend_students.difference(frontend_students)
